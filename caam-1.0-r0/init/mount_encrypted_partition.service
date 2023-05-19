@@ -1,0 +1,14 @@
+# mount partitions based on decryption or normal mount
+[Unit]
+Description=mount partitions based on decryption or normal mount
+Wants=network.target
+After=connman.service
+
+ 
+[Service]
+Type=forking
+Restart=no
+ExecStart=/usr/bin/decryptPartition.sh
+ 
+[Install]
+WantedBy=multi-user.target
