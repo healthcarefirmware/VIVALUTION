@@ -1,0 +1,8 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = true
+[remote "origin"]
+	url = https://gitlab.gnome.org/GNOME/cantarell-fonts
+	fetch = +refs/*:refs/*
+	mirror = true
